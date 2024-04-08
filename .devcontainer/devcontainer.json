@@ -1,0 +1,53 @@
+  // Author: Dan Campbell
+  // Module : CIS2169
+  // Description: Assessment 2 Container
+  // Academic Year: 2023-2024
+{
+	"name": "Laravel10",
+	
+	"dockerComposeFile": "docker-compose.yml",
+
+	"service": "laravel",
+
+	
+	"customizations": {
+
+		
+		"otherPortsAttributes": { "onAutoForward" : "notify" },
+		"vscode": {
+		"settings": {
+		  "terminal.integrated.defaultProfile.linux": "bash",
+		  "terminal.integrated.profiles.linux": {
+			"bash": {
+			  "path": "/bin/bash"
+			}
+		  },
+		  "terminal.integrated.defaultProfile.osx": "bash",
+		  "terminal.integrated.profiles.osx": {
+			"bash": {
+			  "path": "/bin/bash"
+			}
+		  },
+		  "terminal.integrated.defaultProfile.windwows": "bash",
+		  "terminal.integrated.profiles.windows": {
+			"bash": {
+			  "path": "/bin/bash"
+			}
+		  }
+	  },
+	  "extensions": [
+      "xdebug.php-debug",
+      "antfu.browse-lite",
+      "PKief.material-icon-theme"
+    ]
+		}
+	},
+
+
+	"workspaceFolder": "/var/www/html",
+	
+
+	"onCreateCommand": "",
+	
+	"remoteUser": "root"
+}
